@@ -24,7 +24,7 @@ const translations = {
       "gebruiksvriendelijke digitale ervaringen te creëren. Mijn doel is om mijn vaardigheden verder te " +
       "ontwikkelen en bij te dragen aan innovatieve projecten in de toekomst. Ik ben nog steeds lerende en " +
       "sta open voor nieuwe kansen en uitdagingen. <br />Laten we samenwerken!<br />",
-    year: "2+ jaar",
+    year: "2+ jaar<br />Visual design<br />",
     about_educatie: "Educatie",
 
     explore_subtitle: "Verken Mijn",
@@ -56,7 +56,7 @@ const translations = {
       "With a passion for frontend development and visual design, I aim to create engaging and user-friendly " +
       "digital experiences. My goal is to further develop my skills and contribute to innovative projects in the future. " +
       "I am still learning and open to new opportunities and challenges. <br />Let’s work together!<br />",
-    year: "2+ years",
+    year: "2+ years <br />Visual design<br />",
     about_educatie: "Education",
 
     explore_subtitle: "Explore My",
