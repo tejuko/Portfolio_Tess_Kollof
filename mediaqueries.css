@@ -6,7 +6,7 @@
   .about-containers, .project-containers {
     flex-wrap: wrap;
   }
-  #contact,
+  /* #contact, */
   #projects {
     height: fit-content;
   }
