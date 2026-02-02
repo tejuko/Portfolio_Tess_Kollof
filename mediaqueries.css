@@ -13,6 +13,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #profile,
+  #about, #experience, #projects {
+    margin: 0 auto;
+    padding: 4vh 5%;
+  }
   #desktop-nav {
     display: none;
   }
@@ -45,12 +50,18 @@
   .about-containers, .project-containers {
     margin-top: 0;
   }
+  #contact {
+    /* height: fit-content; */
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
     height: 40vh;
+    margin: 0 auto;
+    padding: 0vh 5%;
   }
   #profile {
     height: 83vh;
