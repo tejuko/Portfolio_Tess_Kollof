@@ -9,14 +9,21 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #fff6de;
+  color: #ed3e78;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+p.text_about {
+  color: #434566;
+}
+
 p {
-  color: rgb(85, 85, 85);
+  color: #ec709a;
+  /* color: rgb(85, 85, 85); */
 }
 
 /* TRANSITION */
@@ -35,8 +42,8 @@ a,
   z-index: 1000;
 
   background: white;
-  border: 1px solid rgb(53, 53, 53);
-  color: black;
+  border: 1px solid #434566;
+  color: #626496;
   border-radius: 2rem;
 
   padding: 0.4rem 0.9rem;
@@ -47,7 +54,8 @@ a,
 }
 
 .lang-btn:hover {
-  background: rgb(53, 53, 53);
+  border: 1px solid #ec709a;
+  background: #ed3e78;
   color: white;
 }
 
@@ -71,16 +79,17 @@ nav {
 }
 
 a {
-  color: black;
+  color: #ec709a;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: #ed3e78;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  /* text-decoration-color: rgb(181, 181, 181); */
+  text-decoration-color: #ed3e78;
 }
 
 .logo {
@@ -135,7 +144,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #ed3e78;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -257,8 +266,8 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-  color: black;
+  border: #626496 solid;
+  color: #434566;
 }
 
 .btn-color-1:hover,
@@ -268,12 +277,13 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: #626496;
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #ed3e78;
+  border: #ec709a solid;
 }
 
 .btn-color-2 {
@@ -281,7 +291,8 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  background: #ed3e78;
+  border: #ec709a solid;
 }
 
 .btn-container {
@@ -302,6 +313,14 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.about-containers h3 {
+  color: #434566;
+}
+
+.about-containers p {
+  color: #626496;
 }
 
 .about-details-container {
@@ -329,8 +348,8 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: #626496 solid;
+  border-color: #626496;
   text-align: center;
 }
 
@@ -352,7 +371,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: #ed3e78;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -373,6 +392,14 @@ section {
   justify-content: space-around;
 }
 
+.article-container h3 {
+  color: #ed3e78;
+}
+
+.article-container p {
+  color: #ec709a;
+}
+
 article {
   display: flex;
   width: 10rem;
@@ -391,8 +418,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: #ec709a;
+  background: #fcf2f6;
 }
 
 .project-img {
@@ -403,12 +430,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: #434566;
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: #626496;
+  border-color: #626496;
 }
 
 /* CONTACT */
@@ -424,8 +451,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: #626496 solid;
+  border-color: #626496;
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
@@ -442,6 +469,17 @@ article .icon {
 .contact-info-container p {
   padding-right: 1rem;
   font-size: larger;
+}
+
+.contact-info-container a {
+  color: #626496;
+}
+
+.contact-info-container a:hover {
+  color: #434566;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #434566;
 }
 
 .contact-icon {
