@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <button id="lang-toggle" class="lang-btn">EN</button>
+    <!-- <button id="lang-toggle" class="lang-btn">EN</button> -->
     <nav id="desktop-nav">
+    <div><button id="lang-toggle" class="lang-btn">EN</button></div>
       <div class="logo">Tess Kollof</div>
       <div>
         <ul class="nav-links">
@@ -22,7 +23,8 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Tess Kollof</div>
+        <button id="lang-toggle" class="lang-btn">EN</button>
+      <div class="logo">John Doe</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,10 +32,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()" data-i18n="nav_about">Over mij</a></li>
-          <li><a href="#experience" onclick="toggleMenu()" data-i18n="nav_experience">Ervaring</a></li>
-          <li><a href="#projects" onclick="toggleMenu()" data-i18n="nav_projects">Projecten</a></li>
-          <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -48,7 +50,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/CV_Tess_Kollof.pdf')"
+            onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
           </button>
@@ -111,7 +113,6 @@
               gebruiksvriendelijke digitale ervaringen te creëren. Mijn doel is om mijn vaardigheden verder te 
               ontwikkelen en bij te dragen aan innovatieve projecten in de toekomst. Ik ben nogsteeds lerende en
               sta open voor nieuwe kansen en uitdagingen. <br />Laten we samenwerken!<br />
-              
             </p>
           </div>
         </div>
@@ -167,7 +168,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Visual Design</h2>
+            <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -228,7 +229,7 @@
       <p class="section__text__p1" data-i18n="project_subtitle">Bekijk Mijn Recente</p>
       <h1 class="title" data-i18n="nav_projects">Projecten</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="project-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -302,15 +303,15 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="btn-container">
-        <button
-          id="btn_project"
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-          data-i18n="project_more">
-          Meer Projecten
-        </button>
+        <div class="btn-container">
+            <button
+            id="btn_project"
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+            data-i18n="project_more">
+            Meer Projecten
+            </button>
+        </div>
       </div>
       <img
         src="./assets/arrow.png"
@@ -340,7 +341,7 @@
           <p><a href="https://www.linkedin.com/in/tess-kollof-4b7104290/">LinkedIn</a></p>
         </div>
       </div>
-    <!-- </section> -->
+    </section>
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -352,9 +353,8 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2026 Tess Kollof. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Tess Kollof. All Rights Reserved.</p>
     </footer>
-    </section>
     <script src="script.js"></script>
   </body>
 </html>

@@ -34,11 +34,11 @@ a,
 
 /* BUTTON */
 .lang-btn {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  /* position: relative; */
+  /* top: 1.5rem; */
+  /* left: 1.5rem; */
 
-  z-index: 1000;
+  /* z-index: 1000; */
 
   background: white;
   border: 2px solid #434566;
@@ -87,7 +87,6 @@ a:hover {
   color: #ed3e78;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  /* text-decoration-color: rgb(181, 181, 181); */
   text-decoration-color: #ed3e78;
 }
 
@@ -102,7 +101,6 @@ a:hover {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-  padding-top: 1rem;
   display: none;
 }
 
@@ -182,13 +180,13 @@ a:hover {
 
 /* SECTIONS */
 
-/* section {
+section {
   padding-top: 4vh;
-  height: 103vh;
+  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-} */
+}
 
 .section-container {
   display: flex;
@@ -201,11 +199,6 @@ a:hover {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-
-  padding-top: 4vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section__pic-container {
@@ -291,7 +284,7 @@ a:hover {
 }
 
 .btn-color-2 {
-  background: none;
+  background: white;
 }
 
 .btn-color-2:hover {
@@ -303,33 +296,16 @@ a:hover {
   gap: 1rem;
 }
 
-#btn_project {
-  width: 10rem;
-}
-
 /* ABOUT SECTION */
 
 #about {
   position: relative;
-  padding-top: 4vh;
-  height: 100vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-}
-
-.about-containers h3 {
-  color: #434566;
-}
-
-.about-containers p {
-  color: #626496;
 }
 
 .about-details-container {
@@ -364,7 +340,7 @@ a:hover {
 
 .section-container {
   gap: 4rem;
-  /* height: 80%; */
+  height: 80%;
 }
 
 .section__pic-container {
@@ -373,15 +349,19 @@ a:hover {
   margin: auto 0;
 }
 
+/* styling */
+.about-containers h3 {
+  color: #434566;
+}
+
+.about-containers p {
+  color: #626496;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
   position: relative;
-  padding-top: 4vh;
-  height: 100vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .experience-sub-title {
@@ -406,6 +386,18 @@ a:hover {
   justify-content: space-around;
 }
 
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* styling */
 .article-container h3 {
   color: #ed3e78;
 }
@@ -414,26 +406,10 @@ a:hover {
   color: #ec709a;
 }
 
-article {
-  display: flex;
-  width: 10rem;
-  /*justify-content: space-around;*/
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
-  padding-top: 4vh;
-  height: 100vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .color-container {
@@ -457,15 +433,30 @@ article .icon {
   border-color: #626496;
 }
 
+/* styling */
+.project-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.project-containers h3 {
+  color: #434566;
+}
+
+.project-containers p {
+  color: #626496;
+}
+
 /* CONTACT */
 
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 96vh;
-  padding-top: 4vh;
-  margin: 0 10rem;
+  height: 73vh;
+  padding-top: 10em;
 }
 
 .contact-info-upper-container {
@@ -484,14 +475,22 @@ article .icon {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 0rem;
+  margin-right: 1rem;
 }
 
 .contact-info-container p {
-  padding-right: 1rem;
   font-size: larger;
 }
 
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* styling */
 .contact-info-container a {
   color: #626496;
 }
@@ -501,14 +500,6 @@ article .icon {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #434566;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
 }
 
 /* FOOTER SECTION */

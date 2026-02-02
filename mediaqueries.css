@@ -3,7 +3,7 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
+  .about-containers, .project-containers {
     flex-wrap: wrap;
   }
   #contact,
@@ -42,16 +42,12 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
+  .about-containers, .project-containers {
     margin-top: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .lang-btn {
-    padding: 0.3rem 0.7rem;
-    font-size: 0.9rem;
-  }
   #contact,
   footer {
     height: 40vh;
@@ -69,7 +65,7 @@
   }
   .about-containers,
   .contact-info-upper-container,
-  .btn-container {
+  .btn-container, .project-containers {
     flex-wrap: wrap;
   }
   .contact-info-container {
