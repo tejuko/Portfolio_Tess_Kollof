@@ -463,11 +463,9 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 96vh;
   padding-top: 4vh;
   margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .contact-info-upper-container {
