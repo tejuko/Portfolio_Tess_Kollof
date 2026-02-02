@@ -182,13 +182,13 @@ a:hover {
 
 /* SECTIONS */
 
-section {
+/* section {
   padding-top: 4vh;
-  height: 103vh; /*96vh*/
+  height: 103vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-}
+} */
 
 .section-container {
   display: flex;
@@ -201,6 +201,11 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .section__pic-container {
@@ -306,6 +311,11 @@ section {
 
 #about {
   position: relative;
+  padding-top: 4vh;
+  height: 100vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .about-containers {
@@ -367,6 +377,11 @@ section {
 
 #experience {
   position: relative;
+  padding-top: 4vh;
+  height: 100vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .experience-sub-title {
@@ -414,6 +429,11 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-top: 4vh;
+  height: 100vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .color-container {
@@ -443,7 +463,11 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* height: 71vh; */
+  height: 100vh;
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .contact-info-upper-container {
@@ -492,7 +516,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  /* height: 26vh; */
+  height: 26vh;
   margin: 0 1rem;
 }
 
