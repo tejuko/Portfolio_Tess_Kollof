@@ -41,7 +41,7 @@ a,
   z-index: 1000;
 
   background: white;
-  border: 1px solid #434566;
+  border: 2px solid #434566;
   color: #434566;
   border-radius: 2rem;
 
@@ -265,7 +265,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #626496 solid;
+  border: #434566 solid;
   color: #434566;
 }
 
@@ -443,7 +443,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 71vh;
+  /* height: 71vh; */
 }
 
 .contact-info-upper-container {
@@ -492,7 +492,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  /* height: 26vh; */
   margin: 0 1rem;
 }
 
