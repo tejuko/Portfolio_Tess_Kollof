@@ -80,7 +80,7 @@
     flex-wrap: wrap;
   }
   .contact-info-container {
-    margin: 0;
+    margin-right: 1rem;
   }
   .contact-info-container p,
   .nav-links li a {
