@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Projects</title>
+    <link rel="stylesheet" href="morestyle.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+<body>
+    <nav id="desktop-nav">
+        <div class="nav-left">
+            <div class="back-button"><a href="index.html"><img src="assets/back-button.png" alt="Back Button"></a></div>
+            <div><button id="lang-toggle" class="lang-btn">EN</button></div>
+        </div>
+      <div class="logo"><a class="logoa" href="index.html">Tess Kollof</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about" data-i18n="nav_about">Over mij</a></li>
+          <li><a href="index.html#experience" data-i18n="nav_experience">Ervaring</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projecten</a></li>
+          <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="nav-left">
+            <div class="back-button"><a href="index.html"><img src="assets/back-button.png" alt="Back Button"></a></div>
+            <div><button id="lang-toggle" class="lang-btn">EN</button></div>
+        </div>
+      <div class="logo">Tess Kollof</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="projects">
+      <p class="section__text__p1" data-i18n="moreproject_subtitle">Bekijk Al Mijn</p>
+      <h1 class="title" data-i18n="nav_projects">Projecten</h1>
+      <div class="experience-details-container">
+        <div class="project-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Boekenzoeker.png"
+                alt="Boekenzoeker Project "
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Boekenzoeker</h2>
+            <p class="project-text">Ik heb een Boekenzoeker ontworpen voor kinderen, met de huisstijl van Gemeente Amsterdam in gedachten</p>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://xd.adobe.com/view/ed07539b-f12a-4488-a52a-48838edb302f-b854/?fullscreen&hints=off')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/BakjePlant.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bakje Plant</h2>
+            <p class="project-text">Voor school heb ik een mobiele website gecodeerd om de bewoners van Amsterdam te bedanken voor het groener maken van de stad</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/tejuko/BakjePlant')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tejuko.github.io/BakjePlant/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/HemaCupcakes.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hema Cupcakes</h2>
+            <p>Voor dit project moesten we in de huisstijl van de HEMA een cupcake bestel pagina ontwerpen</p>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://xd.adobe.com/view/0b43d6d1-0e2c-48b5-a184-23f760993929-5e10/?fullscreen&hints=off')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+            <button
+            id="btn_project"
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='more.html'"
+            data-i18n="project_more">
+            Meer Projecten
+            </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1" data-i18n="contact_subtitle">Geïnteresseerd?</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:tessjuliette02@gmail.com">tessjuliette02@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/tess-kollof-4b7104290/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Tess Kollof. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

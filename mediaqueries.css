@@ -111,4 +111,7 @@
   .text-container {
     text-align: justify;
   }
+  nav .nav-left {
+    gap: 0.4rem;
+  }
 }

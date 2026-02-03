@@ -36,7 +36,9 @@ const translations = {
 
     exp_base: "Basis",
     exp_mid: "Gemiddeld",
-    exp_best: "Ervaren"
+    exp_best: "Ervaren",
+    // more projects pagina vanaf hier
+    moreproject_subtitle: "Bekijk Al Mijn"
   },
 
   en: {
@@ -68,7 +70,9 @@ const translations = {
 
     exp_base: "Basic",
     exp_mid: "Intermediate",
-    exp_best: "Experienced"
+    exp_best: "Experienced",
+    // more projects pagina vanaf hier
+    moreproject_subtitle: "Browse All My"
   }
 };
 
