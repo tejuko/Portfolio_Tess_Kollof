@@ -58,7 +58,23 @@ a,
   color: white;
 }
 
-/* DESKTOP NAV */
+/* NAVBAR */
+
+#desktop-nav,
+#hamburger-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff6de;
+}
+
+#desktop-nav {
+  height: 80px;
+}
+
+#hamburger-nav {
+  height: 60px;
+}
 
 nav,
 .nav-links {
@@ -534,10 +550,8 @@ article .icon {
 }
 
 .contact-info-container a:hover {
-  color: #434566;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: #434566;
+  color: #ed3e78;
+  text-decoration: none;
 }
 
 /* FOOTER SECTION */

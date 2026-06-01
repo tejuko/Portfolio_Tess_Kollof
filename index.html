@@ -11,7 +11,7 @@
   <body>
     <!-- <button id="lang-toggle" class="lang-btn">EN</button> -->
     <nav id="desktop-nav">
-    <div><button id="lang-toggle" class="lang-btn">EN</button></div>
+    <div><button type="button" id="lang-toggle" class="lang-btn">EN</button></div>
       <div class="logo">Tess Kollof</div>
       <div>
         <ul class="nav-links">
@@ -23,7 +23,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-        <button id="lang-toggle" class="lang-btn">EN</button>
+        <button type="button" class="lang-btn">EN</button>
       <div class="logo">Tess Kollof</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -32,10 +32,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()" data-i18n="nav_about">Over mij</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" data-i18n="nav_experience">Ervaring</a></li>
+          <li><a href="#projects" onclick="toggleMenu()" data-i18n="nav_projects">Projecten</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" data-i18n="nav_contact">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -46,10 +46,12 @@
       <div class="section__text">
         <p class="section__text__p1" data-i18n="hero_intro">Hallo, ik ben</p>
         <h1 class="title">Tess Kollof</h1>
-        <p class="section__text__p2">CMD student</p>
+        <p class="section__text__p2" data-i18n="hero_role">CMD student</p>
         <div class="btn-container">
           <button
+            type="button"
             class="btn btn-color-2"
+            data-i18n="btn_cv"
             onclick="window.open('./assets/CV_Tess_Kollof.pdf')"
           >
             Download CV

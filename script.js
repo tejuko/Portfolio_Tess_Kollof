@@ -77,21 +77,33 @@ const translations = {
 };
 
 let currentLang = localStorage.getItem("lang") || "nl";
-const toggleBtn = document.getElementById("lang-toggle");
+let toggleBtns;
 
 function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    el.innerHTML = translations[lang][key];
+    if (translations[lang][key] !== undefined) {
+      el.innerHTML = translations[lang][key];
+    }
   });
 
-  toggleBtn.textContent = lang === "nl" ? "EN" : "NL";
+  const label = lang === "nl" ? "EN" : "NL";
+  if (toggleBtns) {
+    toggleBtns.forEach(btn => (btn.textContent = label));
+  }
+  document.documentElement.lang = lang;
   localStorage.setItem("lang", lang);
 }
 
-toggleBtn.addEventListener("click", () => {
-  currentLang = currentLang === "nl" ? "en" : "nl";
+document.addEventListener("DOMContentLoaded", () => {
+  toggleBtns = document.querySelectorAll(".lang-btn");
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      currentLang = currentLang === "nl" ? "en" : "nl";
+      setLanguage(currentLang);
+    });
+  });
+
   setLanguage(currentLang);
 });
-
-setLanguage(currentLang);
